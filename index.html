@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DjDilkhush Bairwa Mushi | Official MP3 Downloads</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #6C63FF;
+      --secondary: #FF6584;
+      --dark: #2D3748;
+      --light: #F7FAFC;
+      --accent: #FFC107;
+      --gradient: linear-gradient(135deg, var(--primary), var(--secondary));
+      --card-bg: linear-gradient(145deg, #ffffff, #f0f0f0);
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+      background-image: radial-gradient(circle at 10% 20%, rgba(108, 99, 255, 0.05) 0%, rgba(108, 99, 255, 0.05) 90%);
+    }
+    
+    /* Glassmorphism Header */
+    .header {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+      padding: 1.2rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    .logo {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.5rem;
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      letter-spacing: 1px;
+      text-shadow: 0 2px 10px rgba(108, 99, 255, 0.2);
+      position: relative;
+      display: inline-block;
+    }
+    
+    .logo::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: var(--gradient);
+      border-radius: 3px;
+    }
+    
+    /* Neon Search Bar */
+    .search-container {
+      max-width: 800px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+      position: relative;
+    }
+    
+    .search-bar {
+      width: 100%;
+      padding: 1.2rem 2.5rem;
+      border: none;
+      border-radius: 50px;
+      font-size: 1rem;
+      background: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 5px 25px rgba(108, 99, 255, 0.15);
+      transition: all 0.3s ease;
+      border: 1px solid rgba(108, 99, 255, 0.2);
+    }
+    
+    .search-bar:focus {
+      outline: none;
+      box-shadow: 0 5px 30px rgba(108, 99, 255, 0.25);
+      border-color: var(--primary);
+    }
+    
+    .search-icon {
+      position: absolute;
+      right: 2.5rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--primary);
+      font-size: 1.1rem;
+    }
+    
+    /* Main Content */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+    
+    .section-title {
+      text-align: center;
+      margin: 3rem 0;
+      position: relative;
+    }
+    
+    .section-title h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      display: inline-block;
+      padding: 0 1rem;
+    }
+    
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100px;
+      height: 4px;
+      background: var(--gradient);
+      border-radius: 2px;
+    }
+    
+    /* Song Cards - 3D Effect */
+    .songs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 2.5rem;
+      margin: 3rem 0;
+    }
+    
+    .song-card {
+      background: white;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+      position: relative;
+      background: var(--card-bg);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+    
+    .song-card:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 20px 40px rgba(108, 99, 255, 0.2);
+    }
+    
+    .song-art {
+      height: 220px;
+      background: var(--gradient);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    }
+    
+    .song-art::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 70%);
+      transform: rotate(30deg);
+      animation: shine 6s infinite linear;
+    }
+    
+    @keyframes shine {
+      0% { transform: rotate(30deg) translate(-10%, -10%); }
+      100% { transform: rotate(30deg) translate(10%, 10%); }
+    }
+    
+    .song-art i {
+      font-size: 5rem;
+      color: white;
+      opacity: 0.9;
+      text-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+    
+    .song-info {
+      padding: 1.8rem;
+    }
+    
+    .song-title {
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: var(--dark);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    
+    .song-artist {
+      color: var(--primary);
+      font-weight: 500;
+      margin-bottom: 1.2rem;
+      display: block;
+      font-size: 0.95rem;
+    }
+    
+    /* Custom Audio Player */
+    .audio-container {
+      width: 100%;
+      margin: 1.2rem 0;
+    }
+    
+    audio {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+    
+    audio::-webkit-media-controls-panel {
+      background-color: white;
+      border-radius: 10px;
+    }
+    
+    /* Download Button */
+    .download-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.9rem 1.8rem;
+      background: var(--gradient);
+      color: white;
+      border: none;
+      border-radius: 50px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      width: 100%;
+      box-shadow: 0 5px 20px rgba(108, 99, 255, 0.3);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .download-btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: 0.5s;
+    }
+    
+    .download-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 30px rgba(108, 99, 255, 0.4);
+    }
+    
+    .download-btn:hover::before {
+      left: 100%;
+    }
+    
+    .download-btn i {
+      margin-right: 10px;
+      font-size: 1.1rem;
+    }
+    
+    /* YouTube CTA */
+    .youtube-cta {
+      text-align: center;
+      margin: 6rem 0 4rem;
+    }
+    
+    .youtube-btn {
+      display: inline-flex;
+      align-items: center;
+      padding: 1.1rem 2.5rem;
+      background: #FF0000;
+      color: white;
+      border-radius: 50px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 20px rgba(255, 0, 0, 0.3);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .youtube-btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: 0.5s;
+    }
+    
+    .youtube-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 30px rgba(255, 0, 0, 0.4);
+    }
+    
+    .youtube-btn:hover::before {
+      left: 100%;
+    }
+    
+    .youtube-btn i {
+      margin-right: 12px;
+      font-size: 1.3rem;
+    }
+    
+    /* Floating Music Notes Animation */
+    .music-note {
+      position: fixed;
+      color: var(--primary);
+      opacity: 0.3;
+      z-index: -1;
+      animation: floatNote 15s linear infinite;
+      font-size: 1.5rem;
+    }
+    
+    @keyframes floatNote {
+      0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+      }
+      10% {
+        opacity: 0.3;
+      }
+      90% {
+        opacity: 0.3;
+      }
+      100% {
+        transform: translateY(-100vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+    
+    /* Footer */
+    footer {
+      background: var(--dark);
+      color: white;
+      padding: 4rem 0 2rem;
+      margin-top: 5rem;
+      position: relative;
+    }
+    
+    footer::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 10px;
+      background: var(--gradient);
+    }
+    
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 3rem;
+      padding: 0 1.5rem;
+    }
+    
+    .footer-column h3 {
+      font-size: 1.4rem;
+      margin-bottom: 1.5rem;
+      position: relative;
+      display: inline-block;
+    }
+    
+    .footer-column h3::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 50px;
+      height: 3px;
+      background: var(--gradient);
+      border-radius: 3px;
+    }
+    
+    .footer-column p {
+      opacity: 0.8;
+      line-height: 1.7;
+    }
+    
+    .social-links {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1.8rem;
+    }
+    
+    .social-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+      transition: all 0.3s ease;
+      font-size: 1.1rem;
+    }
+    
+    .social-link:hover {
+      background: var(--primary);
+      transform: translateY(-3px) scale(1.1);
+      box-shadow: 0 5px 15px rgba(108, 99, 255, 0.3);
+    }
+    
+    .footer-column ul {
+      list-style: none;
+    }
+    
+    .footer-column ul li {
+      margin-bottom: 0.8rem;
+    }
+    
+    .footer-column ul li a {
+      color: white;
+      text-decoration: none;
+      opacity: 0.8;
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+    
+    .footer-column ul li a:hover {
+      opacity: 1;
+      transform: translateX(5px);
+      color: var(--secondary);
+    }
+    
+    .contact-info {
+      margin-top: 1rem;
+    }
+    
+    .contact-info p {
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+    }
+    
+    .contact-info i {
+      margin-right: 0.8rem;
+      color: var(--secondary);
+      font-size: 1.1rem;
+      width: 20px;
+      text-align: center;
+    }
+    
+    .copyright {
+      text-align: center;
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      opacity: 0.7;
+      font-size: 0.9rem;
+    }
+    
+    /* Loading Animation */
+    .loader {
+      display: none;
+      text-align: center;
+      margin: 2rem 0;
+    }
+    
+    .loader i {
+      font-size: 2rem;
+      color: var(--primary);
+      animation: spin 1s linear infinite;
+    }
+    
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    
+    /* Responsive */
+    @media (max-width: 992px) {
+      .logo {
+        font-size: 2.2rem;
+      }
+      
+      .section-title h1 {
+        font-size: 2.2rem;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .logo {
+        font-size: 2rem;
+      }
+      
+      .section-title h1 {
+        font-size: 2rem;
+      }
+      
+      .songs-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+      
+      .song-card {
+        max-width: 400px;
+        margin: 0 auto;
+      }
+      
+      .search-bar {
+        padding: 1rem 2rem;
+      }
+      
+      .search-icon {
+        right: 2rem;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .logo {
+        font-size: 1.8rem;
+      }
+      
+      .section-title h1 {
+        font-size: 1.8rem;
+      }
+      
+      .song-art {
+        height: 180px;
+      }
+      
+      .song-title {
+        font-size: 1.3rem;
+      }
+      
+      .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Floating Music Notes -->
+  <div class="music-note" style="left: 10%; top: 100%; animation-delay: 0s;"><i class="fas fa-music"></i></div>
+  <div class="music-note" style="left: 20%; top: 100%; animation-delay: 2s;"><i class="fas fa-music"></i></div>
+  <div class="music-note" style="left: 30%; top: 100%; animation-delay: 4s;"><i class="fas fa-music"></i></div>
+  <div class="music-note" style="left: 40%; top: 100%; animation-delay: 6s;"><i class="fas fa-music"></i></div>
+  <div class="music-note" style="left: 50%; top: 100%; animation-delay: 8s;"><i class="fas fa-music"></i></div>
+  <div class="music-note" style="left: 60%; top: 100%; animation-delay: 10s;"><i class="fas fa-music"></i></div>
+  <div class="music-note" style="left: 70%; top: 100%; animation-delay: 12s;"><i class="fas fa-music"></i></div>
+  <div class="music-note" style="left: 80%; top: 100%; animation-delay: 14s;"><i class="fas fa-music"></i></div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">DjDilkhushBairwaMushi</div>
+  </header>
+
+  <!-- Search Bar -->
+  <div class="search-container">
+    <input type="text" class="search-bar" placeholder="Search your favorite songs...">
+    <i class="fas fa-search search-icon"></i>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="section-title">
+      <h1>Latest Music Releases</h1>
+    </div>
+
+    <div class="songs-grid">
+      <!-- Song 1 -->
+      <div class="song-card">
+        <div class="song-art">
+          <i class="fas fa-headphones"></i>
+        </div>
+        <div class="song-info">
+          <h3 class="song-title">Dil Maro Todgi Nash Kargi</h3>
+          <span class="song-artist">DjDilkhush Bairwa Mushi</span>
+          <div class="audio-container">
+            <audio controls>
+              <source src="src/Dil Maro Todgi nash Kargi - DjDilkhush Bairwa Mushi 1.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+          <a href="src/Dil Maro Todgi nash Kargi - DjDilkhush Bairwa Mushi 1.mp3" download class="download-btn">
+            <i class="fas fa-download"></i> Download MP3
+          </a>
+        </div>
+      </div>
+
+      <!-- Song 2 -->
+      <div class="song-card">
+        <div class="song-art">
+          <i class="fas fa-compact-disc"></i>
+        </div>
+        <div class="song-info">
+          <h3 class="song-title">Gangster Mashup Song 2025</h3>
+          <span class="song-artist">Dj Dilkhush Bairwa Mushi</span>
+          <div class="audio-container">
+            <audio controls>
+              <source src="src/GangSter Mashup REMIX - DjDilkhush Bairwa Mushi.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+          <a href="src/GangSter Mashup REMIX - DjDilkhush Bairwa Mushi.mp3" download class="download-btn">
+            <i class="fas fa-download"></i> Download MP3
+          </a>
+        </div>
+      </div>
+      
+      <!-- Song 3 -->
+      <div class="song-card">
+        <div class="song-art">
+          <i class="fas fa-compact-disc"></i>
+        </div>
+        <div class="song-info">
+          <h3 class="song-title">Aaj Kaal Ki Chhoriya Do Do Aashiq RakheChh [Hanraj Khtna] - DjDilkhush Bairwa Mushi.mp3</h3>
+          <span class="song-artist">Dj Dilkhush Bairwa Mushi</span>
+          <div class="audio-container">
+            <audio controls>
+              <source src="src/Aaj Kaal Ki Chhoriya Do Do Aashiq RakheChh [Hanraj Khtna] - DjDilkhush Bairwa Mushi.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+          <a href="src/Aaj Kaal Ki Chhoriya Do Do Aashiq RakheChh [Hanraj Khtna] - DjDilkhush Bairwa Mushi.mp3" download class="download-btn">
+            <i class="fas fa-download"></i> Download MP3
+          </a>
+        </div>
+      </div>
+      
+      <!-- Song 4 -->
+      <div class="song-card">
+        <div class="song-art">
+          <i class="fas fa-compact-disc"></i>
+        </div>
+        <div class="song-info">
+          <h3 class="song-title">Kone Baitu Thar Lar Telar Me Betungi [Mdn Famda] - DjDilkhush Bairwa Mushi.mp3</h3>
+          <span class="song-artist">Dj Dilkhush Bairwa Mushi</span>
+          <div class="audio-container">
+            <audio controls>
+              <source src="src/Kone Baitu Thar Lar Telar Me Betungi [Mdn Famda] - DjDilkhush Bairwa Mushi.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+          <a href="src/Kone Baitu Thar Lar Telar Me Betungi [Mdn Famda] - DjDilkhush Bairwa Mushi.mp3" download class="download-btn">
+            <i class="fas fa-download"></i> Download MP3
+          </a>
+        </div>
+      </div>
+      
+      <!-- Song 5 -->
+      <div class="song-card">
+        <div class="song-art">
+          <i class="fas fa-compact-disc"></i>
+        </div>
+        <div class="song-info">
+          <h3 class="song-title">Number 10 Ka Not Pe Degi - DjDilkhush Bairwa Mushi.mp3</h3>
+          <span class="song-artist">Dj Dilkhush Bairwa Mushi</span>
+          <div class="audio-container">
+            <audio controls>
+              <source src="src/Number 10 Ka Not Pe Degi - DjDilkhush Bairwa Mushi.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+          <a href="src/Number 10 Ka Not Pe Degi - DjDilkhush Bairwa Mushi.mp3" download class="download-btn">
+            <i class="fas fa-download"></i> Download MP3
+          </a>
+        </div>
+      </div>
+      
+      <!-- Song 6 -->
+      <div class="song-card">
+        <div class="song-art">
+          <i class="fas fa-compact-disc"></i>
+        </div>
+        <div class="song-info">
+          <h3 class="song-title">Roop Ki Rupali Janu Nakhrali [ManShing Meena].... Dilkhush In The Mix.mp3</h3>
+          <span class="song-artist">Dj Dilkhush Bairwa Mushi</span>
+          <div class="audio-container">
+            <audio controls>
+              <source src="src/Roop Ki Rupali Janu Nakhrali [ManShing Meena].... Dilkhush In The Mix.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+          <a href="src/Roop Ki Rupali Janu Nakhrali [ManShing Meena].... Dilkhush In The Mix.mp3" download class="download-btn">
+            <i class="fas fa-download"></i> Download MP3
+          </a>
+        </div>
+      </div>
+      
+      <div class="songs-grid">
+        <!-- Song 1 -->
+        <div class="song-card">
+          <div class="song-art">
+            <i class="fas fa-headphones"></i>
+          </div>
+          <div class="song-info">
+            <h3 class="song-title">Dil Maro Todgi Nash Kargi</h3>
+            <span class="song-artist">DjDilkhush Bairwa Mushi</span>
+            <div class="audio-container">
+              <audio controls>
+                <source src="src/Dil Maro Todgi nash Kargi - DjDilkhush Bairwa Mushi 1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+            <a href="src/Dil Maro Todgi nash Kargi - DjDilkhush Bairwa Mushi 1.mp3" download class="download-btn">
+              <i class="fas fa-download"></i> Download MP3
+            </a>
+          </div>
+        </div>
+  
+        <!-- Song 2 -->
+        <div class="song-card">
+          <div class="song-art">
+            <i class="fas fa-compact-disc"></i>
+          </div>
+          <div class="song-info">
+            <h3 class="song-title">Gangster Mashup Song 2025</h3>
+            <span class="song-artist">Dj Dilkhush Bairwa Mushi</span>
+            <div class="audio-container">
+              <audio controls>
+                <source src="src/GangSter Mashup REMIX - DjDilkhush Bairwa Mushi.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+            <a href="src/GangSter Mashup REMIX - DjDilkhush Bairwa Mushi.mp3" download class="download-btn">
+              <i class="fas fa-download"></i> Download MP3
+            </a>
+          </div>
+        </div>
+        
+        <!-- Song 3 -->
+        <div class="song-card">
+          <div class="song-art">
+            <i class="fas fa-compact-disc"></i>
+          </div>
+          <div class="song-info">
+            <h3 class="song-title">Aaj Kaal Ki Chhoriya Do Do Aashiq RakheChh [Hanraj Khtna] - DjDilkhush Bairwa Mushi.mp3</h3>
+            <span class="song-artist">Dj Dilkhush Bairwa Mushi</span>
+            <div class="audio-container">
+              <audio controls>
+                <source src="src/Aaj Kaal Ki Chhoriya Do Do Aashiq RakheChh [Hanraj Khtna] - DjDilkhush Bairwa Mushi.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+            <a href="src/Aaj Kaal Ki Chhoriya Do Do Aashiq RakheChh [Hanraj Khtna] - DjDilkhush Bairwa Mushi.mp3" download class="download-btn">
+              <i class="fas fa-download"></i> Download MP3
+            </a>
+          </div>
+        </div>
+        
+        <!-- Song 4 -->
+        <div class="song-card">
+          <div class="song-art">
+            <i class="fas fa-compact-disc"></i>
+          </div>
+          <div class="song-info">
+            <h3 class="song-title">Kone Baitu Thar Lar Telar Me Betungi [Mdn Famda] - DjDilkhush Bairwa Mushi.mp3</h3>
+            <span class="song-artist">Dj Dilkhush Bairwa Mushi</span>
+            <div class="audio-container">
+              <audio controls>
+                <source src="src/Kone Baitu Thar Lar Telar Me Betungi [Mdn Famda] - DjDilkhush Bairwa Mushi.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+            <a href="src/Kone Baitu Thar Lar Telar Me Betungi [Mdn Famda] - DjDilkhush Bairwa Mushi.mp3" download class="download-btn">
+              <i class="fas fa-download"></i> Download MP3
+            </a>
+          </div>
+        </div>
+        
+        <!-- Song 5 -->
+        <div class="song-card">
+          <div class="song-art">
+            <i class="fas fa-compact-disc"></i>
+          </div>
+          <div class="song-info">
+            <h3 class="song-title">Number 10 Ka Not Pe Degi - DjDilkhush Bairwa Mushi.mp3</h3>
+            <span class="song-artist">Dj Dilkhush Bairwa Mushi</span>
+            <div class="audio-container">
+              <audio controls>
+                <source src="src/Number 10 Ka Not Pe Degi - DjDilkhush Bairwa Mushi.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+            <a href="src/Number 10 Ka Not Pe Degi - DjDilkhush Bairwa Mushi.mp3" download class="download-btn">
+              <i class="fas fa-download"></i> Download MP3
+            </a>
+          </div>
+        </div>
+        
+        <!-- Song 6 -->
+        <div class="song-card">
+          <div class="song-art">
+            <i class="fas fa-compact-disc"></i>
+          </div>
+          <div class="song-info">
+            <h3 class="song-title">Roop Ki Rupali Janu Nakhrali [ManShing Meena].... Dilkhush In The Mix.mp3</h3>
+            <span class="song-artist">Dj Dilkhush Bairwa Mushi</span>
+            <div class="audio-container">
+              <audio controls>
+                <source src="src/Roop Ki Rupali Janu Nakhrali [ManShing Meena].... Dilkhush In The Mix.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+            <a href="src/Roop Ki Rupali Janu Nakhrali [ManShing Meena].... Dilkhush In The Mix.mp3" download class="download-btn">
+              <i class="fas fa-download"></i> Download MP3
+            </a>
+          </div>
+        </div>
+        <div class="songs-grid">
+          <!-- Song 1 -->
+          <div class="song-card">
+            <div class="song-art">
+              <i class="fas fa-headphones"></i>
+            </div>
+            <div class="song-info">
+              <h3 class="song-title">Dil Maro Todgi Nash Kargi</h3>
+              <span class="song-artist">DjDilkhush Bairwa Mushi</span>
+              <div class="audio-container">
+                <audio controls>
+                  <source src="src/Dil Maro Todgi nash Kargi - DjDilkhush Bairwa Mushi 1.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+              <a href="src/Dil Maro Todgi nash Kargi - DjDilkhush Bairwa Mushi 1.mp3" download class="download-btn">
+                <i class="fas fa-download"></i> Download MP3
+              </a>
+            </div>
+          </div>
+    
+          <!-- Song 2 -->
+          <div class="song-card">
+            <div class="song-art">
+              <i class="fas fa-compact-disc"></i>
+            </div>
+            <div class="song-info">
+              <h3 class="song-title">Gangster Mashup Song 2025</h3>
+              <span class="song-artist">Dj Dilkhush Bairwa Mushi</span>
+              <div class="audio-container">
+                <audio controls>
+                  <source src="src/GangSter Mashup REMIX - DjDilkhush Bairwa Mushi.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+              <a href="src/GangSter Mashup REMIX - DjDilkhush Bairwa Mushi.mp3" download class="download-btn">
+                <i class="fas fa-download"></i> Download MP3
+              </a>
+            </div>
+          </div>
+          
+          <!-- Song 3 -->
+          <div class="song-card">
+            <div class="song-art">
+              <i class="fas fa-compact-disc"></i>
+            </div>
+            <div class="song-info">
+              <h3 class="song-title">Aaj Kaal Ki Chhoriya Do Do Aashiq RakheChh [Hanraj Khtna] - DjDilkhush Bairwa Mushi.mp3</h3>
+              <span class="song-artist">Dj Dilkhush Bairwa Mushi</span>
+              <div class="audio-container">
+                <audio controls>
+                  <source src="src/Aaj Kaal Ki Chhoriya Do Do Aashiq RakheChh [Hanraj Khtna] - DjDilkhush Bairwa Mushi.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+              <a href="src/Aaj Kaal Ki Chhoriya Do Do Aashiq RakheChh [Hanraj Khtna] - DjDilkhush Bairwa Mushi.mp3" download class="download-btn">
+                <i class="fas fa-download"></i> Download MP3
+              </a>
+            </div>
+          </div>
+          
+          <!-- Song 4 -->
+          <div class="song-card">
+            <div class="song-art">
+              <i class="fas fa-compact-disc"></i>
+            </div>
+            <div class="song-info">
+              <h3 class="song-title">Kone Baitu Thar Lar Telar Me Betungi [Mdn Famda] - DjDilkhush Bairwa Mushi.mp3</h3>
+              <span class="song-artist">Dj Dilkhush Bairwa Mushi</span>
+              <div class="audio-container">
+                <audio controls>
+                  <source src="src/Kone Baitu Thar Lar Telar Me Betungi [Mdn Famda] - DjDilkhush Bairwa Mushi.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+              <a href="src/Kone Baitu Thar Lar Telar Me Betungi [Mdn Famda] - DjDilkhush Bairwa Mushi.mp3" download class="download-btn">
+                <i class="fas fa-download"></i> Download MP3
+              </a>
+            </div>
+          </div>
+          
+          <!-- Song 5 -->
+          <div class="song-card">
+            <div class="song-art">
+              <i class="fas fa-compact-disc"></i>
+            </div>
+            <div class="song-info">
+              <h3 class="song-title">Number 10 Ka Not Pe Degi - DjDilkhush Bairwa Mushi.mp3</h3>
+              <span class="song-artist">Dj Dilkhush Bairwa Mushi</span>
+              <div class="audio-container">
+                <audio controls>
+                  <source src="src/Number 10 Ka Not Pe Degi - DjDilkhush Bairwa Mushi.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+              <a href="src/Number 10 Ka Not Pe Degi - DjDilkhush Bairwa Mushi.mp3" download class="download-btn">
+                <i class="fas fa-download"></i> Download MP3
+              </a>
+            </div>
+          </div>
+          
+          <!-- Song 6 -->
+          <div class="song-card">
+            <div class="song-art">
+              <i class="fas fa-compact-disc"></i>
+            </div>
+            <div class="song-info">
+              <h3 class="song-title">Roop Ki Rupali Janu Nakhrali [ManShing Meena].... Dilkhush In The Mix.mp3</h3>
+              <span class="song-artist">Dj Dilkhush Bairwa Mushi</span>
+              <div class="audio-container">
+                <audio controls>
+                  <source src="src/Roop Ki Rupali Janu Nakhrali [ManShing Meena].... Dilkhush In The Mix.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+              <a href="src/Roop Ki Rupali Janu Nakhrali [ManShing Meena].... Dilkhush In The Mix.mp3" download class="download-btn">
+                <i class="fas fa-download"></i> Download MP3
+              </a>
+            </div>
+          </div>
+          <div class="songs-grid">
+            <!-- Song 1 -->
+            <div class="song-card">
+              <div class="song-art">
+                <i class="fas fa-headphones"></i>
+              </div>
+              <div class="song-info">
+                <h3 class="song-title">Dil Maro Todgi Nash Kargi</h3>
+                <span class="song-artist">DjDilkhush Bairwa Mushi</span>
+                <div class="audio-container">
+                  <audio controls>
+                    <source src="src/Dil Maro Todgi nash Kargi - DjDilkhush Bairwa Mushi 1.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                  </audio>
+                </div>
+                <a href="src/Dil Maro Todgi nash Kargi - DjDilkhush Bairwa Mushi 1.mp3" download class="download-btn">
+                  <i class="fas fa-download"></i> Download MP3
+                </a>
+              </div>
+            </div>
+      
+            <!-- Song 2 -->
+            <div class="song-card">
+              <div class="song-art">
+                <i class="fas fa-compact-disc"></i>
+              </div>
+              <div class="song-info">
+                <h3 class="song-title">Gangster Mashup Song 2025</h3>
+                <span class="song-artist">Dj Dilkhush Bairwa Mushi</span>
+                <div class="audio-container">
+                  <audio controls>
+                    <source src="src/GangSter Mashup REMIX - DjDilkhush Bairwa Mushi.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                  </audio>
+                </div>
+                <a href="src/GangSter Mashup REMIX - DjDilkhush Bairwa Mushi.mp3" download class="download-btn">
+                  <i class="fas fa-download"></i> Download MP3
+                </a>
+              </div>
+            </div>
+            
+            <!-- Song 3 -->
+            <div class="song-card">
+              <div class="song-art">
+                <i class="fas fa-compact-disc"></i>
+              </div>
+              <div class="song-info">
+                <h3 class="song-title">Aaj Kaal Ki Chhoriya Do Do Aashiq RakheChh [Hanraj Khtna] - DjDilkhush Bairwa Mushi.mp3</h3>
+                <span class="song-artist">Dj Dilkhush Bairwa Mushi</span>
+                <div class="audio-container">
+                  <audio controls>
+                    <source src="src/Aaj Kaal Ki Chhoriya Do Do Aashiq RakheChh [Hanraj Khtna] - DjDilkhush Bairwa Mushi.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                  </audio>
+                </div>
+                <a href="src/Aaj Kaal Ki Chhoriya Do Do Aashiq RakheChh [Hanraj Khtna] - DjDilkhush Bairwa Mushi.mp3" download class="download-btn">
+                  <i class="fas fa-download"></i> Download MP3
+                </a>
+              </div>
+            </div>
+            
+            <!-- Song 4 -->
+            <div class="song-card">
+              <div class="song-art">
+                <i class="fas fa-compact-disc"></i>
+              </div>
+              <div class="song-info">
+                <h3 class="song-title">Kone Baitu Thar Lar Telar Me Betungi [Mdn Famda] - DjDilkhush Bairwa Mushi.mp3</h3>
+                <span class="song-artist">Dj Dilkhush Bairwa Mushi</span>
+                <div class="audio-container">
+                  <audio controls>
+                    <source src="src/Kone Baitu Thar Lar Telar Me Betungi [Mdn Famda] - DjDilkhush Bairwa Mushi.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                  </audio>
+                </div>
+                <a href="src/Kone Baitu Thar Lar Telar Me Betungi [Mdn Famda] - DjDilkhush Bairwa Mushi.mp3" download class="download-btn">
+                  <i class="fas fa-download"></i> Download MP3
+                </a>
+              </div>
+            </div>
+            
+            <!-- Song 5 -->
+            <div class="song-card">
+              <div class="song-art">
+                <i class="fas fa-compact-disc"></i>
+              </div>
+              <div class="song-info">
+                <h3 class="song-title">Number 10 Ka Not Pe Degi - DjDilkhush Bairwa Mushi.mp3</h3>
+                <span class="song-artist">Dj Dilkhush Bairwa Mushi</span>
+                <div class="audio-container">
+                  <audio controls>
+                    <source src="src/Number 10 Ka Not Pe Degi - DjDilkhush Bairwa Mushi.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                  </audio>
+                </div>
+                <a href="src/Number 10 Ka Not Pe Degi - DjDilkhush Bairwa Mushi.mp3" download class="download-btn">
+                  <i class="fas fa-download"></i> Download MP3
+                </a>
+              </div>
+            </div>
+            
+            <!-- Song 6 -->
+            <div class="song-card">
+              <div class="song-art">
+                <i class="fas fa-compact-disc"></i>
+              </div>
+              <div class="song-info">
+                <h3 class="song-title">Roop Ki Rupali Janu Nakhrali [ManShing Meena].... Dilkhush In The Mix.mp3</h3>
+                <span class="song-artist">Dj Dilkhush Bairwa Mushi</span>
+                <div class="audio-container">
+                  <audio controls>
+                    <source src="src/Roop Ki Rupali Janu Nakhrali [ManShing Meena].... Dilkhush In The Mix.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                  </audio>
+                </div>
+                <a href="src/Roop Ki Rupali Janu Nakhrali [ManShing Meena].... Dilkhush In The Mix.mp3" download class="download-btn">
+                  <i class="fas fa-download"></i> Download MP3
+                </a>
+              </div>
+            </div>
+            <div class="songs-grid">
+              <!-- Song 1 -->
+              <div class="song-card">
+                <div class="song-art">
+                  <i class="fas fa-headphones"></i>
+                </div>
+                <div class="song-info">
+                  <h3 class="song-title">Dil Maro Todgi Nash Kargi</h3>
+                  <span class="song-artist">DjDilkhush Bairwa Mushi</span>
+                  <div class="audio-container">
+                    <audio controls>
+                      <source src="src/Dil Maro Todgi nash Kargi - DjDilkhush Bairwa Mushi 1.mp3" type="audio/mpeg">
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                  <a href="src/Dil Maro Todgi nash Kargi - DjDilkhush Bairwa Mushi 1.mp3" download class="download-btn">
+                    <i class="fas fa-download"></i> Download MP3
+                  </a>
+                </div>
+              </div>
+        
+              <!-- Song 2 -->
+              <div class="song-card">
+                <div class="song-art">
+                  <i class="fas fa-compact-disc"></i>
+                </div>
+                <div class="song-info">
+                  <h3 class="song-title">Gangster Mashup Song 2025</h3>
+                  <span class="song-artist">Dj Dilkhush Bairwa Mushi</span>
+                  <div class="audio-container">
+                    <audio controls>
+                      <source src="src/GangSter Mashup REMIX - DjDilkhush Bairwa Mushi.mp3" type="audio/mpeg">
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                  <a href="src/GangSter Mashup REMIX - DjDilkhush Bairwa Mushi.mp3" download class="download-btn">
+                    <i class="fas fa-download"></i> Download MP3
+                  </a>
+                </div>
+              </div>
+              
+              <!-- Song 3 -->
+              <div class="song-card">
+                <div class="song-art">
+                  <i class="fas fa-compact-disc"></i>
+                </div>
+                <div class="song-info">
+                  <h3 class="song-title">Aaj Kaal Ki Chhoriya Do Do Aashiq RakheChh [Hanraj Khtna] - DjDilkhush Bairwa Mushi.mp3</h3>
+                  <span class="song-artist">Dj Dilkhush Bairwa Mushi</span>
+                  <div class="audio-container">
+                    <audio controls>
+                      <source src="src/Aaj Kaal Ki Chhoriya Do Do Aashiq RakheChh [Hanraj Khtna] - DjDilkhush Bairwa Mushi.mp3" type="audio/mpeg">
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                  <a href="src/Aaj Kaal Ki Chhoriya Do Do Aashiq RakheChh [Hanraj Khtna] - DjDilkhush Bairwa Mushi.mp3" download class="download-btn">
+                    <i class="fas fa-download"></i> Download MP3
+                  </a>
+                </div>
+              </div>
+              
+              <!-- Song 4 -->
+              <div class="song-card">
+                <div class="song-art">
+                  <i class="fas fa-compact-disc"></i>
+                </div>
+                <div class="song-info">
+                  <h3 class="song-title">Kone Baitu Thar Lar Telar Me Betungi [Mdn Famda] - DjDilkhush Bairwa Mushi.mp3</h3>
+                  <span class="song-artist">Dj Dilkhush Bairwa Mushi</span>
+                  <div class="audio-container">
+                    <audio controls>
+                      <source src="src/Kone Baitu Thar Lar Telar Me Betungi [Mdn Famda] - DjDilkhush Bairwa Mushi.mp3" type="audio/mpeg">
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                  <a href="src/Kone Baitu Thar Lar Telar Me Betungi [Mdn Famda] - DjDilkhush Bairwa Mushi.mp3" download class="download-btn">
+                    <i class="fas fa-download"></i> Download MP3
+                  </a>
+                </div>
+              </div>
+              
+              <!-- Song 5 -->
+              <div class="song-card">
+                <div class="song-art">
+                  <i class="fas fa-compact-disc"></i>
+                </div>
+                <div class="song-info">
+                  <h3 class="song-title">Number 10 Ka Not Pe Degi - DjDilkhush Bairwa Mushi.mp3</h3>
+                  <span class="song-artist">Dj Dilkhush Bairwa Mushi</span>
+                  <div class="audio-container">
+                    <audio controls>
+                      <source src="src/Number 10 Ka Not Pe Degi - DjDilkhush Bairwa Mushi.mp3" type="audio/mpeg">
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                  <a href="src/Number 10 Ka Not Pe Degi - DjDilkhush Bairwa Mushi.mp3" download class="download-btn">
+                    <i class="fas fa-download"></i> Download MP3
+                  </a>
+                </div>
+              </div>
+              
+              <!-- Song 6 -->
+              <div class="song-card">
+                <div class="song-art">
+                  <i class="fas fa-compact-disc"></i>
+                </div>
+                <div class="song-info">
+                  <h3 class="song-title">Roop Ki Rupali Janu Nakhrali [ManShing Meena].... Dilkhush In The Mix.mp3</h3>
+                  <span class="song-artist">Dj Dilkhush Bairwa Mushi</span>
+                  <div class="audio-container">
+                    <audio controls>
+                      <source src="src/Roop Ki Rupali Janu Nakhrali [ManShing Meena].... Dilkhush In The Mix.mp3" type="audio/mpeg">
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                  <a href="src/Roop Ki Rupali Janu Nakhrali [ManShing Meena].... Dilkhush In The Mix.mp3" download class="download-btn">
+                    <i class="fas fa-download"></i> Download MP3
+                  </a>
+                </div>
+              </div>
+                          
+      <!-- ADD MORE SONGS HERE USING THIS TEMPLATE -->
+      <!-- Song Template - Copy and paste this block to add more songs -->
+      <div class="song-card">
+        <div class="song-art">
+          <i class="fas fa-music"></i> <!-- Change icon as needed (fa-headphones, fa-compact-disc) -->
+        </div>
+        <div class="song-info">
+          <h3 class="song-title">SONG_TITLE_HERE</h3>
+          <span class="song-artist">ARTIST_NAME_HERE</span>
+          <div class="audio-container">
+            <audio controls>
+              <source src="PATH_TO_MP3_FILE" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+          <a href="PATH_TO_MP3_FILE" download class="download-btn">
+            <i class="fas fa-download"></i> Download MP3
+          </a>
+        </div>
+      </div>
+      <!-- End of Song Template -->
+      
+    </div>
+
+    <!-- Loading Indicator (for future dynamic loading) -->
+    <div class="loader" id="loader">
+      <i class="fas fa-spinner"></i>
+    </div>
+
+    <!-- YouTube CTA -->
+    <div class="youtube-cta">
+      <a href="https://www.youtube.com/@djdilkhushbairwamushi102?si=B3kUPuI-k9MIgX1J" target="_blank" class="youtube-btn">
+        <i class="fab fa-youtube"></i> Subscribe on YouTube
+      </a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-column">
+        <h3>About</h3>
+        <p>DjDilkhush Bairwa Mushi is a talented music producer and DJ creating amazing remixes and original tracks.</p>
+        <div class="social-links">
+          <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/kishan_sanatani_11?igsh=cmd1a2lzZ3NtbjQ1" class="social-link"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-soundcloud"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Songs</a></li>
+          <li><a href="#">Remixes</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <div class="contact-info">
+          <p><i class="fas fa-envelope"></i> contact@djdilkhush.com</p>
+          <p><i class="fas fa-phone"></i> +91 XXXXX XXXXX</p>
+          <p><i class="fas fa-map-marker-alt"></i> Rajasthan, India</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="copyright">
+      <p>&copy; 2025 DjDilkhushBairwaMushi. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Search functionality
+    const searchInput = document.querySelector('.search-bar');
+    searchInput.addEventListener('input', function() {
+      const term = this.value.toLowerCase();
+      document.querySelectorAll('.song-card').forEach(card => {
+        const title = card.querySelector('.song-title').textContent.toLowerCase();
+        const artist = card.querySelector('.song-artist').textContent.toLowerCase();
+        card.style.display = (title.includes(term) || artist.includes(term)) ? '' : 'none';
+      });
+    });
+    
+    // Audio player volume control
+    document.querySelectorAll('audio').forEach(audio => {
+      audio.volume = 0.7; // Set default volume to 70%
+    });
+    
+    // Animation for music notes
+    function createMusicNote() {
+      const note = document.createElement('div');
+      note.className = 'music-note';
+      note.innerHTML = '<i class="fas fa-music"></i>';
+      note.style.left = Math.random() * 100 + '%';
+      note.style.top = '100%';
+      note.style.animationDelay = Math.random() * 15 + 's';
+      document.body.appendChild(note);
+      
+      // Remove note after animation completes
+      setTimeout(() => {
+        note.remove();
+      }, 15000);
+    }
+    
+    // Create more music notes periodically
+    setInterval(createMusicNote, 2000);
+    
+    // Initially create some notes
+    for (let i = 0; i < 8; i++) {
+      setTimeout(createMusicNote, i * 500);
+    }
+  </script>
+</body>
+</html>
